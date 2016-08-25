@@ -1,0 +1,22 @@
+public class bubbleSortAlg {
+  
+  public static void bubbleSort(int[] array){
+    
+    int lastPosition;
+    int index;
+    int temp;
+    
+    for(lastPosition = array.length - 1; lastPosition >= 0; lastPostion--) {
+      for(index = 0; index <= lastPosition - 1; index++) {
+        if(array[index] > array[index + 1]) {
+          temp = array[index];
+          array[index] = array[index + 1];
+          array[index + 1] = temp;
+          }
+      
+  
+      }
+    }
+    
+  }
+}
