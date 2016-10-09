@@ -7,7 +7,7 @@ public class bubbleSortAlg {
     
     int lastPosition; //Holds the last position in the array
     int index; //Holds the index element to compare
-    int temp; //temp variable used to swap elements
+    int swap; //temp variable used to swap elements
     
     //Outer for loop sets lastPosition to hold the last position in the array
     //This loop will execute until the lastPosition is greater than or equal to zero
@@ -17,9 +17,9 @@ public class bubbleSortAlg {
         //Compares two elements next to each other in the array
         if(array[index] > array[index + 1]) {
           //Swap the elements
-          temp = array[index];
+          swap = array[index];
           array[index] = array[index + 1];
-          array[index + 1] = temp;
+          array[index + 1] = swap;
         }
       }
     }
